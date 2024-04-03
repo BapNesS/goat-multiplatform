@@ -1,0 +1,18 @@
+{
+  "id": "13",
+  "fullName": "Fuzzy Wuzzy, la Pelucheuse",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/13/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/13/media-2.webp"
+  ],
+  "breed": "Alpine",
+  "description": "Fuzzy Wuzzy est une adorable chèvre Alpine, remarquable par son pelage particulièrement épais et doux, qui lui donne un air de grosse peluche. Elle aime les câlins et vient volontiers vers les gens pour des gratouilles. Sa nature amicale et son apparence duveteuse en font une favorite parmi les visiteurs.",
+  "age": 12,
+  "temperament": "Amicale et câline",
+  "skills": {
+    "milkProductivity": 0.6,
+    "friendliness": 0.95,
+    "humor": 0.7
+  },
+  "diet": "Son alimentation est soigneusement équilibrée pour maintenir son pelage en bonne santé, incluant un régime riche en foin nutritif, grains, et un assortiment de légumes et fruits frais."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "6",
+  "fullName": "Billy The Kid, l'Explorateur",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/6/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/6/media-2.webp"
+  ],
+  "breed": "Boer",
+  "description": "Billy The Kid est une jeune chèvre Boer pleine d'énergie et toujours prête pour une aventure. Il se distingue par sa curiosité insatiable et son amour pour l'exploration, souvent vu en train de grimper ou de sauter sur des objets inattendus dans la ferme.",
+  "age": 12,
+  "temperament": "Curieux et aventureux",
+  "skills": {
+    "milkProductivity": 0.3,
+    "friendliness": 0.85,
+    "humor": 0.95
+  },
+  "diet": "Bien qu'encore jeune, Billy bénéficie d'une alimentation riche et diversifiée pour soutenir sa croissance et son énergie débordante, comprenant du foin, des grains spéciaux pour jeunes chèvres, et un mélange de légumes et de fruits frais."
+}

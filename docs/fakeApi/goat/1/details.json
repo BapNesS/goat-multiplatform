@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "fullName": "CapriSun la Magnifique",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/1/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/1/media-2.webp"
+  ],
+  "breed": "Alpine",
+  "description": "CapriSun est une chèvre alpine énergique et curieuse, toujours prête à explorer son environnement. Elle se distingue par sa robe marron clair et ses yeux pétillants de malice. Très appréciée pour sa productivité laitière, elle l'est tout autant pour sa capacité à tisser des liens forts avec ceux qui s'en occupent.",
+  "age": 36,
+  "temperament": "Curieux et énergique",
+  "skills": {
+    "milkProductivity": 0.95,
+    "friendliness": 0.85,
+    "humor": 0.75
+  },
+  "diet": "CapriSun bénéficie d'une alimentation équilibrée composée d'herbe fraîche, de foin de haute qualité, de granulés spécialement formulés pour les chèvres laitières, et d'un mélange de minéraux et vitamines pour assurer sa santé et sa productivité."
+}

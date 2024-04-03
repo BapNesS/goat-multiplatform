@@ -1,0 +1,18 @@
+{
+  "id": "19",
+  "fullName": "Peanut Butter, l'Amie des Enfants",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/19/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/19/media-2.webp"
+  ],
+  "breed": "Toggenburg",
+  "description": "Peanut Butter est une chèvre Toggenburg au pelage marron doux et aux marques caractéristiques de la race. Elle est particulièrement appréciée pour sa gentillesse envers les enfants, les approchant toujours avec curiosité et douceur. Son comportement amical et sa patience en font une compagne idéale lors des visites de la ferme.",
+  "age": 24,
+  "temperament": "Douce et amicale",
+  "skills": {
+    "milkProductivity": 0.7,
+    "friendliness": 0.95,
+    "humor": 0.6
+  },
+  "diet": "Son régime alimentaire est riche et varié, composé de foin nutritif, de grains équilibrés et d'un mélange de fruits et légumes frais, assurant sa santé et son bien-être."
+}

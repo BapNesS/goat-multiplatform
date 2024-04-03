@@ -1,0 +1,18 @@
+{
+  "id": "2",
+  "fullName": "Bêêêlinda la Joyeuse",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/2/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/2/media-2.webp"
+  ],
+  "breed": "Naine Nigériane",
+  "description": "Bêêêlinda est une petite chèvre naine nigériane avec un pelage distinctif noir et blanc. Elle est connue pour son caractère enjoué et sa tendance à faire des bêtises, ce qui amuse toujours l'ensemble de la ferme.",
+  "age": 24,
+  "temperament": "Enjoué et malicieux",
+  "skills": {
+    "milkProductivity": 0.65,
+    "friendliness": 0.95,
+    "humor": 0.9
+  },
+  "diet": "Bêêêlinda apprécie une alimentation variée incluant beaucoup de verdure, des légumes, un peu de grain, ainsi qu'un supplément de vitamines pour garder sa petite taille pleine d'énergie."
+}

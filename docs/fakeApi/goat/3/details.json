@@ -1,0 +1,18 @@
+{
+  "id": "3",
+  "fullName": "Mr. Moustache l'Élégant",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/3/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/3/media-2.webp"
+  ],
+  "breed": "Saanen",
+  "description": "Mr. Moustache est une imposante chèvre Saanen, remarquable par son pelage blanc éclatant et sa petite moustache caractéristique. Il est le leader naturel du troupeau, affichant une dignité et une prestance qui commandent le respect. Son tempérament calme et son apparence distinguée en font une figure emblématique de la ferme.",
+  "age": 48,
+  "temperament": "Calme et digne",
+  "skills": {
+    "milkProductivity": 0.7,
+    "friendliness": 0.8,
+    "humor": 0.6
+  },
+  "diet": "La diète de Mr. Moustache est composée principalement d'herbe fraîche, de foin de qualité supérieure et d'un mélange équilibré de grains. Il bénéficie également de suppléments de vitamines et de minéraux pour maintenir sa robustesse et sa santé impeccable."
+}

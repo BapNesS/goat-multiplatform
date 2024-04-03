@@ -1,0 +1,18 @@
+{
+  "id": "14",
+  "fullName": "Buttercup, la Rayonnante",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/14/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/14/media-2.webp"
+  ],
+  "breed": "LaMancha",
+  "description": "Buttercup est une chèvre LaMancha avec un pelage jaune-doré lumineux et de courtes oreilles caractéristiques de sa race. Elle est connue pour son attitude ensoleillée et son comportement amical, se mêlant aisément aux autres chèvres et cherchant souvent l'attention des soigneurs.",
+  "age": 48,
+  "temperament": "Ensoleillée et amicale",
+  "skills": {
+    "milkProductivity": 0.85,
+    "friendliness": 0.9,
+    "humor": 0.8
+  },
+  "diet": "La diète de Buttercup comprend une grande variété de foin, grains enrichis et légumes frais pour maintenir sa bonne santé et son énergie positive."
+}

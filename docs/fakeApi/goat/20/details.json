@@ -1,0 +1,18 @@
+{
+  "id": "20",
+  "fullName": "Fluffy, le Nuage Ambulant",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/20/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/20/media-2.webp"
+  ],
+  "breed": "Kiko",
+  "description": "Fluffy est une chèvre Kiko avec un pelage exceptionnellement épais et moelleux, lui donnant l'apparence d'un petit nuage. Elle est très calme et aime passer son temps à paître tranquillement dans les champs, apportant une touche de sérénité au troupeau. Fluffy est une présence douce et apaisante, aimée de tous pour son tempérament pacifique.",
+  "age": 60,
+  "temperament": "Calme et sereine",
+  "skills": {
+    "milkProductivity": 0.65,
+    "friendliness": 0.9,
+    "humor": 0.5
+  },
+  "diet": "La diète de Fluffy est composée principalement de foin de haute qualité, avec un ajout de grains et un assortiment de légumes et fruits pour maintenir son pelage épais et sa santé."
+}

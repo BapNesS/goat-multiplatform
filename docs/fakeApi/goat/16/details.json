@@ -1,0 +1,18 @@
+{
+  "id": "16",
+  "fullName": "Velvet, la Majestueuse",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/16/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/16/media-2.webp"
+  ],
+  "breed": "Saanen",
+  "description": "Velvet est une imposante chèvre Saanen à la robe blanche et soyeuse, digne d'une reine. Elle porte son nom grâce à son pelage d'une douceur exceptionnelle et son allure noble. Velvet est connue pour sa majestuosité et sa nature sereine, dominant paisiblement son troupeau avec une présence rassurante.",
+  "age": 36,
+  "temperament": "Sereine et majestueuse",
+  "skills": {
+    "milkProductivity": 0.8,
+    "friendliness": 0.7,
+    "humor": 0.6
+  },
+  "diet": "Son alimentation est composée de foin de la meilleure qualité, complétée par des grains nutritifs et un mélange de légumes et de fruits frais pour assurer sa santé royale et sa production laitière abondante."
+}
