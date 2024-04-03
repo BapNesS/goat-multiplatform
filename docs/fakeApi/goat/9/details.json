@@ -1,0 +1,18 @@
+{
+  "id": "9",
+  "fullName": "Princess Butterscotch, la Douce",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/9/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/9/media-2.webp"
+  ],
+  "breed": "Sable",
+  "description": "Princess Butterscotch est une chèvre de race Sable, avec un pelage soyeux de couleur caramel. Elle est connue pour sa nature douce et aimante, souvent trouvée blottie contre quiconque s'assoit assez longtemps dans son enclos. Sa tendresse et son tempérament calme en font un favori parmi les enfants et les adultes visitant la ferme.",
+  "age": 48,
+  "temperament": "Douce et aimante",
+  "skills": {
+    "milkProductivity": 0.8,
+    "friendliness": 0.95,
+    "humor": 0.7
+  },
+  "diet": "Son régime alimentaire est composé principalement de foin de grande qualité, enrichi de grains complets et d'un mélange de fruits et légumes frais pour garantir une nutrition complète et équilibrée."
+}

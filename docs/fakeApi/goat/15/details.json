@@ -1,0 +1,18 @@
+{
+  "id": "15",
+  "fullName": "Caramel, la Suave",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/15/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/15/media-2.webp"
+  ],
+  "breed": "Naine Nigériane",
+  "description": "Caramel est une chèvre naine nigériane avec un pelage soyeux couleur caramel, doux au toucher et réchauffant au cœur. Elle se distingue par sa douceur et sa tranquillité, aimant se prélasser au soleil pendant des heures. Caramel est particulièrement appréciée pour sa capacité à apaiser et réconforter les autres animaux de la ferme.",
+  "age": 24,
+  "temperament": "Douce et tranquille",
+  "skills": {
+    "milkProductivity": 0.7,
+    "friendliness": 0.95,
+    "humor": 0.65
+  },
+  "diet": "Son régime alimentaire est composé de foin de qualité, de grains spécifiques aux besoins nutritionnels des chèvres naines, et d'une sélection de fruits et légumes frais pour enrichir sa diète."
+}

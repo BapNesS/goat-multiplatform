@@ -1,0 +1,18 @@
+{
+  "id": "5",
+  "fullName": "Chèvre Cheese la Gourmande",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/5/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/5/media-2.webp"
+  ],
+  "breed": "LaMancha",
+  "description": "Avec ses oreilles distinctivement courtes, Chèvre Cheese est une représentante charismatique de la race LaMancha, connue pour son excellente production laitière. Son appétit pour toutes sortes d'aliments en fait la gourmande de la ferme, et elle n'hésite pas à montrer son affection à ceux qui la nourrissent.",
+  "age": 72,
+  "temperament": "Affectionnée et gourmande",
+  "skills": {
+    "milkProductivity": 0.9,
+    "friendliness": 0.8,
+    "humor": 0.7
+  },
+  "diet": "Son alimentation est variée et équilibrée, incluant un large éventail de végétaux, des grains de haute qualité, et un complément de minéraux pour soutenir sa production laitière abondante."
+}

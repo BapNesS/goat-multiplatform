@@ -1,0 +1,18 @@
+{
+  "id": "10",
+  "fullName": "Sir Bleats A Lot, le Vocal",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/10/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/10/media-2.webp"
+  ],
+  "breed": "Oberhasli",
+  "description": "Sir Bleats A Lot est une chèvre Oberhasli expressive qui n'hésite pas à faire entendre sa voix, que ce soit pour accueillir les visiteurs de la ferme ou pour signaler l'heure des repas. Son pelage riche en couleurs et sa personnalité audacieuse font de lui une figure mémorable et aimée de tous.",
+  "age": 60,
+  "temperament": "Expressif et audacieux",
+  "skills": {
+    "milkProductivity": 0.7,
+    "friendliness": 0.85,
+    "humor": 0.9
+  },
+  "diet": "Sa diète est variée et soigneusement équilibrée pour maintenir sa santé robuste, incluant une sélection de foin de qualité, des grains, et une abondance de légumes frais pour compléter son alimentation."
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "id": "1",
+    "name": "CapriSun",
+    "age": 36,
+    "breed": "Alpine",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/1/media-1.webp"
+  },
+  {
+    "id": "2",
+    "name": "Bêêêlinda",
+    "age": 24,
+    "breed": "Naine Nigériane",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/2/media-1.webp"
+  },
+  {
+    "id": "3",
+    "name": "Mr. Moustache",
+    "age": 48,
+    "breed": "Saanen",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/3/media-1.webp"
+  },
+  {
+    "id": "4",
+    "name": "Wooly Jumper",
+    "age": 60,
+    "breed": "Angora",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/4/media-1.webp"
+  },
+  {
+    "id": "5",
+    "name": "Chèvre Cheese",
+    "age": 72,
+    "breed": "LaMancha",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/5/media-1.webp"
+  },
+  {
+    "id": "6",
+    "name": "Billy The Kid",
+    "age": 12,
+    "breed": "Boer",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/6/media-1.webp"
+  },
+  {
+    "id": "7",
+    "name": "Daisy Duke",
+    "age": 30,
+    "breed": "Toggenburg",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/7/media-1.webp"
+  },
+  {
+    "id": "8",
+    "name": "Hoof Hearted",
+    "age": 36,
+    "breed": "Kiko",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/8/media-1.webp"
+  },
+  {
+    "id": "9",
+    "name": "Princess Butterscotch",
+    "age": 48,
+    "breed": "Sable",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/9/media-1.webp"
+  },
+  {
+    "id": "10",
+    "name": "Sir Bleats A Lot",
+    "age": 60,
+    "breed": "Oberhasli",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/10/media-1.webp"
+  },
+  {
+    "id": "11",
+    "name": "Jumping Jack",
+    "age": 24,
+    "breed": "Pygmée",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/11/media-1.webp"
+  },
+  {
+    "id": "12",
+    "name": "Goatee",
+    "age": 36,
+    "breed": "Cashmere",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/12/media-1.webp"
+  },
+  {
+    "id": "13",
+    "name": "Fuzzy Wuzzy",
+    "age": 12,
+    "breed": "Alpine",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/13/media-1.webp"
+  },
+  {
+    "id": "14",
+    "name": "Buttercup",
+    "age": 48,
+    "breed": "LaMancha",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/14/media-1.webp"
+  },
+  {
+    "id": "15",
+    "name": "Caramel",
+    "age": 24,
+    "breed": "Naine Nigériane",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/15/media-1.webp"
+  },
+  {
+    "id": "16",
+    "name": "Velvet",
+    "age": 36,
+    "breed": "Saanen",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/16/media-1.webp"
+  },
+  {
+    "id": "17",
+    "name": "Gandalf The Grey",
+    "age": 72,
+    "breed": "Angora",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/17/media-1.webp"
+  },
+  {
+    "id": "18",
+    "name": "Mocha",
+    "age": 12,
+    "breed": "Boer",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/18/media-1.webp"
+  },
+  {
+    "id": "19",
+    "name": "Peanut Butter",
+    "age": 24,
+    "breed": "Toggenburg",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/19/media-1.webp"
+  },
+  {
+    "id": "20",
+    "name": "Fluffy",
+    "age": 60,
+    "breed": "Kiko",
+    "url": "https://bapness.github.io/goat-multiplatform/fakeApi/goat/20/media-1.webp"
+  }
+]
+

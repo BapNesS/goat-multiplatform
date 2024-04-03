@@ -1,0 +1,18 @@
+{
+  "id": "17",
+  "fullName": "Gandalf The Grey, le Sage",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/17/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/17/media-2.webp"
+  ],
+  "breed": "Angora",
+  "description": "Gandalf The Grey est une chèvre Angora dont le pelage gris et majestueux rappelle la sagesse et le calme. Son allure imposante et ses yeux pénétrants en font une figure respectée au sein du troupeau. Gandalf aime passer son temps à contempler l'horizon, méditant sur les mystères de la ferme.",
+  "age": 72,
+  "temperament": "Calme et sage",
+  "skills": {
+    "milkProductivity": 0.5,
+    "friendliness": 0.8,
+    "humor": 0.7
+  },
+  "diet": "Sa diète est soigneusement choisie pour maintenir la splendeur de son pelage et sa santé globale, incluant un équilibre de foin de qualité, de grains enrichis et une variété de légumes et fruits pour ses besoins nutritionnels."
+}

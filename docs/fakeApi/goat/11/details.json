@@ -1,0 +1,18 @@
+{
+  "id": "11",
+  "fullName": "Jumping Jack, l'Acrobate",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/11/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/11/media-2.webp"
+  ],
+  "breed": "Pygmée",
+  "description": "Jumping Jack est une chèvre pygmée pleine d'énergie, célèbre pour ses sauts et cabrioles impressionnants. Petit mais audacieux, Jack aime montrer ses compétences acrobatiques, en sautant par-dessus des obstacles ou en se balançant sur des éléments du décor de la ferme.",
+  "age": 24,
+  "temperament": "Vif et joueur",
+  "skills": {
+    "milkProductivity": 0.5,
+    "friendliness": 0.9,
+    "humor": 0.95
+  },
+  "diet": "En dépit de sa taille, Jack a un appétit vigoureux, se nourrissant d'un mélange de foin, de grains enrichis et d'une variété de fruits et légumes pour garder son énergie débordante."
+}

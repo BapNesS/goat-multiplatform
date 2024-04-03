@@ -1,0 +1,18 @@
+{
+  "id": "12",
+  "fullName": "Goatee, la Philosophique",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/12/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/12/media-2.webp"
+  ],
+  "breed": "Cashmere",
+  "description": "Goatee est une chèvre Cashmere avec un pelage exceptionnellement doux et un regard pensif. Elle passe beaucoup de temps à contempler le paysage, offrant parfois des 'mais' méditatifs aux questions non posées. Sa présence tranquille et réfléchie apporte une atmosphère paisible à la ferme.",
+  "age": 36,
+  "temperament": "Calme et contemplatif",
+  "skills": {
+    "milkProductivity": 0.4,
+    "friendliness": 0.8,
+    "humor": 0.5
+  },
+  "diet": "Goatee bénéficie d'une alimentation riche et variée, conçue pour maintenir la qualité de son pelage Cashmere, comprenant du foin de qualité, des grains sélectionnés, et un assortiment de fruits et légumes."
+}

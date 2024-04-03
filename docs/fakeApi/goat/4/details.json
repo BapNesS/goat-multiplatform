@@ -1,0 +1,18 @@
+{
+  "id": "4",
+  "fullName": "Wooly Jumper la Douce",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/4/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/4/media-2.webp"
+  ],
+  "breed": "Angora",
+  "description": "Wooly Jumper est une chèvre Angora avec un pelage exceptionnellement long et doux, donnant l'impression d'un petit nuage ambulant. Elle est particulièrement appréciée pour la qualité de sa laine et sa nature amicale. Wooly aime passer ses journées à brouter tranquillement et à se blottir contre quiconque lui offre une caresse.",
+  "age": 60,
+  "temperament": "Tranquille et affectueuse",
+  "skills": {
+    "milkProductivity": 0.4,
+    "friendliness": 0.95,
+    "humor": 0.5
+  },
+  "diet": "Le régime alimentaire de Wooly est composé de beaucoup de foin de haute qualité pour entretenir son pelage, ainsi que d'un mélange spécial de grains enrichis pour garder sa laine douce et brillante. Elle reçoit également un supplément vitaminique pour assurer sa bonne santé globale."
+}

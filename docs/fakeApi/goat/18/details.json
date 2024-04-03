@@ -1,0 +1,18 @@
+{
+  "id": "18",
+  "fullName": "Mocha, l'Énergique",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/18/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/18/media-2.webp"
+  ],
+  "breed": "Boer",
+  "description": "Mocha est une chèvre Boer robuste, avec un pelage marron riche et des marques blanches distinctives. Elle est toujours en mouvement, cherchant de nouvelles aventures ou défis à relever. Sa nature énergique et sa forte personnalité font d'elle une leader naturelle parmi ses pairs.",
+  "age": 12,
+  "temperament": "Aventureuse et leader",
+  "skills": {
+    "milkProductivity": 0.6,
+    "friendliness": 0.85,
+    "humor": 0.8
+  },
+  "diet": "La diète de Mocha est conçue pour soutenir son activité élevée et sa croissance, comprenant un mélange de foin de haute qualité, de grains nutritifs et un assortiment diversifié de légumes et fruits pour maintenir sa vitalité."
+}

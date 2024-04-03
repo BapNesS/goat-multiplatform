@@ -1,0 +1,18 @@
+{
+  "id": "8",
+  "fullName": "Hoof Hearted, le Rapide",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/8/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/8/media-2.webp"
+  ],
+  "breed": "Kiko",
+  "description": "Hoof Hearted est une chèvre Kiko dynamique, reconnue pour sa rapidité et son agilité exceptionnelles. Elle adore courir dans les vastes espaces de la ferme, souvent en tête des courses improvisées avec les autres chèvres. Son énergie semble inépuisable, et elle est toujours prête pour une nouvelle aventure.",
+  "age": 36,
+  "temperament": "Énergique et agile",
+  "skills": {
+    "milkProductivity": 0.6,
+    "friendliness": 0.75,
+    "humor": 0.8
+  },
+  "diet": "Sa diète est conçue pour soutenir son niveau d'énergie élevé, comprenant un mélange de foin nutritif, de grains de haute qualité, et une variété de légumes pour garder ses muscles et son esprit vifs."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "7",
+  "fullName": "Daisy Duke, l'Élégante",
+  "photoUrls": [
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/7/media-1.webp",
+    "https://bapness.github.io/goat-multiplatform/fakeApi/goat/7/media-2.webp"
+  ],
+  "breed": "Toggenburg",
+  "description": "Daisy Duke est une magnifique représentante de la race Toggenburg, avec son pelage distinctif et ses marques caractéristiques. Elle est connue pour sa démarche gracieuse et son allure élégante. Daisy est une chèvre particulièrement sociable qui aime passer du temps avec ses compagnons de ferme, aussi bien chèvres qu'humains.",
+  "age": 30,
+  "temperament": "Gracieuse et sociable",
+  "skills": {
+    "milkProductivity": 0.75,
+    "friendliness": 0.9,
+    "humor": 0.6
+  },
+  "diet": "Elle profite d'une alimentation bien équilibrée composée de foin de qualité, de grains enrichis, et d'un assortiment de légumes et fruits pour compléter ses besoins nutritionnels."
+}
