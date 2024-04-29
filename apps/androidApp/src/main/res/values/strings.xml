@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">OhMyGoat!</string>
+    <string name="app_name" translatable="false">OhMyGoat!</string>
+
+    <string name="list_title">All the goats</string>
+    <string name="viewmode_list">List</string>
+    <string name="viewmode_grid">Grid</string>
+    <string name="detail_title">Goat details</string>
+    <string name="detail_milkproductivity">Milk productivity</string>
+    <string name="detail_friendliness">Friendliness</string>
+    <string name="detail_humor">Humor</string>
 </resources>

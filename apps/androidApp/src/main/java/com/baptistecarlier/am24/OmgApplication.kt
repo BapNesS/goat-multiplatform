@@ -9,7 +9,7 @@ class OmgApplication : Application() {
         super.onCreate()
 
         // TODO Android to KMP
-        val useSharedData = false
+        val useSharedData = true
 
         with(this) {
             startKoin(useSharedData)

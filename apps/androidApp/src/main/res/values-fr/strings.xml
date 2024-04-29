@@ -1,0 +1,9 @@
+<resources>
+    <string name="list_title">Mes chèvres</string>
+    <string name="viewmode_list">Liste</string>
+    <string name="viewmode_grid">Grille</string>
+    <string name="detail_title">Détails d\'une chèvre</string>
+    <string name="detail_milkproductivity">Productivité</string>
+    <string name="detail_friendliness">Capital sympathie</string>
+    <string name="detail_humor">Drôle</string>
+</resources>

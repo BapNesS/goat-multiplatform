@@ -6,7 +6,7 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val appUiModule = module {
-    viewModel { ListVM(get()) }
+    viewModel { ListVM(get(), get(), get()) }
     viewModel { DetailVM(get(), get()) }
 }
 

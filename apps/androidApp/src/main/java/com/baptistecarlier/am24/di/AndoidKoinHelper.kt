@@ -2,6 +2,7 @@ package com.baptistecarlier.am24.di
 
 import android.app.Application
 import com.baptistecarlier.am24.data.di.dataAndroidModule
+import com.baptistecarlier.am24.shared.data.di.dataSharedAndroidModule
 import com.baptistecarlier.am24.shared.data.di.dataSharedModule
 import com.baptistecarlier.am24.shared.domain.di.sharedDomainModule
 import com.baptistecarlier.am24.ui.di.appUiModule
@@ -15,9 +16,9 @@ internal fun startKoin(useSharedData: Boolean) {
 
     val dataModule = when {
         // KMP :
-        useSharedData -> dataSharedModule
+        useSharedData -> listOf(dataSharedModule, dataSharedAndroidModule)
         // Android:
-        else -> dataAndroidModule
+        else -> listOf(dataAndroidModule)
     }
 
     startKoin {
@@ -29,7 +30,7 @@ internal fun startKoin(useSharedData: Boolean) {
         // Load modules
         val modulesList = buildList {
             add(appUiModule)
-            add(dataModule)
+            addAll(dataModule)
             add(sharedDomainModule)
         }
         modules(modulesList)

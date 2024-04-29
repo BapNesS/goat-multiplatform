@@ -7,7 +7,7 @@ class GetGoatTeaserUc(
     private val goatRepository: GoatRepository
 ) {
 
-    suspend operator fun invoke(): List<GoatTeaser>? =
+    suspend operator fun invoke(): Result<List<GoatTeaser>> =
         goatRepository.getAllGoat()
 
 }

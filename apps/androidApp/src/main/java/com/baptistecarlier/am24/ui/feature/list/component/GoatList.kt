@@ -1,81 +1,68 @@
 package com.baptistecarlier.am24.ui.feature.list.component
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
+import android.annotation.SuppressLint
+import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.material3.Card
+import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.unit.dp
-import coil.compose.AsyncImage
-import com.baptistecarlier.am24.shared.domain.model.GoatTeaser
+import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
+import com.baptistecarlier.am24.R
 import com.baptistecarlier.am24.ui.common.component.LoadingView
+import com.baptistecarlier.am24.ui.feature.list.component.preview.ListStateProvider
+import com.baptistecarlier.am24.ui.feature.list.screen.ListState
+import com.baptistecarlier.am24.ui.theme.OmgTheme
 
+@SuppressLint("UnusedCrossfadeTargetStateParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun GoatList(state: List<GoatTeaser>?, goGoat: (id: String) -> Unit) {
+fun GoatList(
+    state: ListState,
+    onListModeChanged: (isList: Boolean) -> Unit,
+    goGoat: (id: String) -> Unit,
+) {
+    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(rememberTopAppBarState())
+
     Scaffold(
-        topBar = { TopAppBar(title = { Text("List") }) }
+        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(R.string.list_title)) },
+                scrollBehavior = scrollBehavior
+            )
+        }
 
     ) { innerPadding ->
         val modifier = Modifier.padding(innerPadding)
 
-        if (state != null) {
-            LazyVerticalGrid(
-                modifier = modifier.fillMaxSize(),
-                columns = GridCells.Adaptive(120.dp),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 16.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp),
-                horizontalArrangement = Arrangement.spacedBy(12.dp),
-            ) {
-                items(state) {
-                    Card(
-                        modifier = Modifier.fillMaxWidth(),
-                        onClick = { goGoat(it.id) }) {
-                        Column {
-                            AsyncImage(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .aspectRatio(1f),
-                                contentScale = ContentScale.Crop,
-                                model = it.url,
-                                contentDescription = null
-                            )
-                            Column(modifier = Modifier.padding(12.dp),
-                                verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                                Text(
-                                    text = it.name,
-                                    maxLines = 1,
-                                    overflow = TextOverflow.Ellipsis,
-                                )
-                                Text(
-                                    style = MaterialTheme.typography.labelSmall,
-                                    text = "${it.age} mois",
-                                    maxLines = 1,
-                                    overflow = TextOverflow.Ellipsis,
-                                )
-                            }
-                        }
-                    }
+        Crossfade(targetState = state, label = "ListState") { _ ->
+            when (state) {
+                ListState.Error -> LoadingView(modifier)
+                ListState.Loading -> LoadingView(modifier)
+                is ListState.Success -> {
+                    GoatListSuccess(modifier = modifier, state.list, state.isListMode, onListModeChanged, goGoat)
                 }
             }
-        } else {
-            LoadingView(modifier)
         }
 
+    }
+}
+
+@Preview
+@Composable
+private fun Preview(
+    @PreviewParameter(ListStateProvider::class) state: ListState
+) {
+    OmgTheme {
+        GoatList(state, { }, { })
     }
 }

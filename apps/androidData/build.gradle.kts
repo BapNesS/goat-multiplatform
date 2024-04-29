@@ -21,16 +21,18 @@ android {
 }
 
 dependencies {
-    // implementation(libs.androidx.core.ktx)
-    // implementation(libs.androidx.appcompat)
-
     // Retrofit
     implementation(libs.retrofit2.retrofit)
     implementation(libs.converter.gson)
 
+    // DataStore (KMP compatible lib)
+    implementation(libs.androidx.datastore)
+    implementation(libs.androidx.datastore.preferences)
+
     // Koin
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.core)
+    implementation(libs.koin.android)
 
     // Shared
     api(project(":shared:domain"))

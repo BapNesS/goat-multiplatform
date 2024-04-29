@@ -23,9 +23,14 @@ kotlin {
             implementation(libs.ktor.client.logging)
             api(libs.ktor.serialization.json)
             implementation(libs.ktor.client.contentNegociation)
+
+            // DataStore (KMP compatible lib)
+            implementation(libs.androidx.datastore)
+            implementation(libs.androidx.datastore.preferences)
         }
         androidMain.dependencies {
             implementation(libs.ktor.client.android)
+            implementation(libs.koin.android)
         }
     }
 }

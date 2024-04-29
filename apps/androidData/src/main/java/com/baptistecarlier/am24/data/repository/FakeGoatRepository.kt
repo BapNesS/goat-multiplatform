@@ -14,9 +14,10 @@ import com.baptistecarlier.am24.shared.domain.repository.GoatRepository
  */
 class FakeGoatRepository : GoatRepository {
 
-    override suspend fun getAllGoat(): List<GoatTeaser> {
+    override suspend fun getAllGoat(): Result<List<GoatTeaser>> {
         val mapper = GoatTeaserMapper()
-        return goatTeaserMock.mapNotNull { mapper.mapOrNull(it) }
+        val list = goatTeaserMock.mapNotNull { mapper.mapOrNull(it) }
+        return Result.success(list)
     }
 
     override suspend fun getGoat(id: String): GoatDetail? {

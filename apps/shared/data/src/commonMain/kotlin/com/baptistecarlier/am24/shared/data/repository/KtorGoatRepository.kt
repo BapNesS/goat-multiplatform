@@ -27,14 +27,14 @@ class KtorGoatRepository(
     private val goatDetailMapper = GoatDetailMapper()
 
     // Implementations
-    override suspend fun getAllGoat(): List<GoatTeaser>? = runCatching {
+    override suspend fun getAllGoat(): Result<List<GoatTeaser>> = runCatching {
         ktorClient.httpClient.get(allUrl)
             .body<List<GoatTeaserDto>>()
             .mapNotNull(goatTeaserMapper::mapOrNull)
-    }.getOrNull()
+    }
 
     override suspend fun getGoat(id: String): GoatDetail? = runCatching {
-        ktorClient.httpClient.get(detailUrl((id)))
+        ktorClient.httpClient.get(detailUrl(id))
             .body<GoatDetailDto>()
             .let(goatDetailMapper::mapOrNull)
     }.getOrNull()

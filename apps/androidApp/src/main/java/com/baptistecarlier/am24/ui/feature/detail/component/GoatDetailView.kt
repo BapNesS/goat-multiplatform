@@ -15,9 +15,14 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.baptistecarlier.am24.R
 import com.baptistecarlier.am24.shared.domain.model.GoatDetail
 import com.baptistecarlier.am24.ui.common.component.LoadingView
 
@@ -27,15 +32,19 @@ fun GoatDetailView(
     state: GoatDetail?,
     goBack: () -> Unit,
 ) {
+    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(rememberTopAppBarState())
+
     Scaffold(
+        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
             TopAppBar(
+                scrollBehavior = scrollBehavior,
                 navigationIcon = {
                     IconButton(onClick = { goBack() }) {
                         Icon(imageVector = Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
                     }
                 },
-                title = { Text("Detail") })
+                title = { Text(stringResource(R.string.detail_title)) })
         }
     ) { innerPadding ->
         val modifier = Modifier.padding(innerPadding)

@@ -16,11 +16,11 @@ class RetrofitGoatRepository(
     private val goatDetailMapper = GoatDetailMapper()
 
     // Implementations
-    override suspend fun getAllGoat(): List<GoatTeaser>? = runCatching {
+    override suspend fun getAllGoat(): Result<List<GoatTeaser>> = runCatching {
         goatDatasourceService
             .getAll()
             .mapNotNull(goatTeaserMapper::mapOrNull)
-    }.getOrNull()
+    }
 
     override suspend fun getGoat(id: String): GoatDetail? = runCatching {
         goatDatasourceService
@@ -28,4 +28,3 @@ class RetrofitGoatRepository(
             .let(goatDetailMapper::mapOrNull)
     }.getOrNull()
 }
-
