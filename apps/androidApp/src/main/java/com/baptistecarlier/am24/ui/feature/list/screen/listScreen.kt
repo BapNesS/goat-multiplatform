@@ -21,7 +21,7 @@ internal fun NavGraphBuilder.listScreen(
     ) {
         val viewModel: ListVM = koinViewModel()
         val state = viewModel.state.collectAsState().value
-        GoatList(state, viewModel::onListModeChanged, goGoat)
+        GoatList(state, viewModel::onListModeChanged, viewModel::onRetry, goGoat)
     }
 }
 

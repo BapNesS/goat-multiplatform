@@ -6,4 +6,7 @@
     <string name="detail_milkproductivity">Productivité</string>
     <string name="detail_friendliness">Capital sympathie</string>
     <string name="detail_humor">Drôle</string>
+    <string name="retry">Réessayer</string>
+    <string name="list_error_title">Une erreur est survenue</string>
+    <string name="list_error_description">Avez-vous un problème de connexion ?</string>
 </resources>

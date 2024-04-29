@@ -8,6 +8,7 @@ import com.baptistecarlier.am24.shared.domain.interactor.list.UpdateListModeUc
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 class ListVM(
@@ -20,6 +21,15 @@ class ListVM(
     val state: StateFlow<ListState> = _state
 
     init {
+        retrieveData()
+    }
+
+    fun onRetry() {
+        _state.update { ListState.Loading }
+        retrieveData()
+    }
+
+    private fun retrieveData() {
         viewModelScope.launch {
             val listMode = getListModeUc()
 
