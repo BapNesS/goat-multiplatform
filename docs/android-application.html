@@ -1,0 +1,57 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#6C46BC"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-05-01T11:28:47.063077"><title>Android app | Goat Multiplatform</title><script type="application/json" id="virtual-toc-data">[{"id":"available-layers","level":0,"title":"Available layers","anchor":"#available-layers"},{"id":"how-to-use-it","level":0,"title":"How to use it","anchor":"#how-to-use-it"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.css" rel="stylesheet"><link rel="manifest" href="site.webmanifest"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Android app | Goat Multiplatform"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Goat Multiplatform Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/android-application.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Android app | Goat Multiplatform"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/android-application.html#webpage",
+    "url": "writerside-documentation/android-application.html",
+    "name": "Android app | Goat Multiplatform",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Goat Multiplatform Help"
+}</script><!-- End Schema.org --></head><body data-id="Android-application" data-main-title="Android app" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Tech-documentation.topic|Tech documentation"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Goat Multiplatform  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Android-application" id="Android-application.md">Android app</h1><p id="oc0o2l_1"></p><section class="chapter"><h2 id="available-layers" data-toc="available-layers">Available layers</h2><p id="oc0o2l_4">Two data layers are available.</p><p id="oc0o2l_5">Android only module: <code class="code" id="oc0o2l_6">:androidData</code>. It uses:</p><ul class="list _bullet" id="oc0o2l_7"><li class="list__item" id="oc0o2l_8"><p>Koin</p></li><li class="list__item" id="oc0o2l_9"><p>Retrofit</p></li><li class="list__item" id="oc0o2l_10"><p>GSON's Retrofit converter</p></li><li class="list__item" id="oc0o2l_11"><p>DataStore</p></li></ul><p id="oc0o2l_12">KMP shared module: <code class="code" id="oc0o2l_13">:shared:data</code>. The <span class="control" id="oc0o2l_14">domain layer</span> should be in KMP so that <span class="control" id="oc0o2l_15">shared data module</span> can access to it. It uses:</p><ul class="list _bullet" id="oc0o2l_16"><li class="list__item" id="oc0o2l_17"><p>Koin</p></li><li class="list__item" id="oc0o2l_18"><p>Ktor</p></li><li class="list__item" id="oc0o2l_19"><p>Ktor JSON client</p></li><li class="list__item" id="oc0o2l_20"><p>Ktor Content Negotiation client</p></li><li class="list__item" id="oc0o2l_21"><p>Kotlinx Serialization</p></li><li class="list__item" id="oc0o2l_22"><p>DataStore</p></li></ul><p id="oc0o2l_23">On KMP shared module, there is specific Koin module named <code class="code" id="oc0o2l_24">dataSharedAndroidModule</code> that provides Android specific <code class="code" id="oc0o2l_25">DataStoreMigrationFactory</code>. (see <code class="code" id="oc0o2l_26">DataSharedModule.android.kt</code>)</p></section><section class="chapter"><h2 id="how-to-use-it" data-toc="how-to-use-it">How to use it</h2><p id="oc0o2l_27">In <code class="code" id="oc0o2l_28">OmgApplication.kt</code>, you can switch between Android data module to KMP data module.</p><p id="oc0o2l_29">The dependency injection will do the job under the hood.</p><div class="code-collapse" data-lang="kotlin" data-is-expanded="false" data-synopsis="OmgApplication.kt">
+class OmgApplication : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+
+        val useSharedData = true
+
+        with(this) {
+            startKoin(useSharedData)
+        }
+   }
+
+}
+</div><div class="code-block" data-lang="kotlin">
+context(Application)
+internal fun startKoin(useSharedData: Boolean) {
+
+    val dataModule = when {
+        // KMP :
+        useSharedData -&gt; listOf(dataSharedModule, dataSharedAndroidModule)
+        // Android:
+        else -&gt; listOf(dataAndroidModule)
+    }
+
+    startKoin {
+        // Log Koin into Android logger
+        val logsLevel: Level = Level.DEBUG
+        androidLogger(logsLevel)
+        // Reference Android context
+        androidContext(this@Application)
+        // Load modules
+        val modulesList = buildList {
+            add(appUiModule)
+            addAll(dataModule)
+            add(sharedDomainModule)
+        }
+        modules(modulesList)
+    }
+
+}
+</div></section><div class="last-modified">Last modified: 01 mai 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="tech-documentation.html" class="navigation-links__prev">Tech documentation</a><a href="ios-application.html" class="navigation-links__next">iOS app</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.js"></script></body></html>
